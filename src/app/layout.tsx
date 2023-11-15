@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Rob Harding | Full Stack Developer",
   description:
-    "Rob Harding is a full stack developer skilled in React, Node, and TypeScript.",
+    "Rob Harding is a full stack developer skilled in React, Next.js, and TypeScript.",
 };
 
 export default function RootLayout({
