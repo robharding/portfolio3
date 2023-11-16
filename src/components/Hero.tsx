@@ -13,7 +13,7 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <section className="w-full sm:w-[36rem] mx-auto">
+    <section className="w-full sm:w-[36rem] md:w-fit mx-auto">
       <div className="flex w-full items-center justify-center gap-8">
         <div className="relative">
           <Image
@@ -23,7 +23,7 @@ const Hero: FC<HeroProps> = ({}) => {
             height="192"
             quality={100}
             priority={true}
-            className="h-32 w-32 sm:h-48 sm:w-48 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
+            className="h-32 w-32 sm:h-48 sm:w-48 md:h-52 md:w-52 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
           />
 
           <span className="absolute right-0 bottom-[0.35rem] text-3xl sm:text-5xl">
@@ -32,7 +32,7 @@ const Hero: FC<HeroProps> = ({}) => {
         </div>
 
         <div>
-          <h1 className="text-5xl sm:text-7xl font-bold">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold">
             ROB
             <br />
             HARDING
