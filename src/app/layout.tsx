@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import BackdropColors from "@/components/BackdropColors";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          `bg-gray-50 min-h-screen text-gray-950 relative`
+        )}
+      >
+        <BackdropColors />
+        {children}
+      </body>
     </html>
   );
 }
