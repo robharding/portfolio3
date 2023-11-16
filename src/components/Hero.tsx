@@ -3,17 +3,11 @@
 import Image from "next/image";
 import { FC } from "react";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Download,
-  Github,
-  Linkedin,
-  MoveRight,
-} from "lucide-react";
-
-import { Button, buttonVariants } from "./ui/button";
-import { cn } from "@/lib/utils";
+import { Download, Github, Linkedin, MoveRight } from "lucide-react";
 import Link from "next/link";
+
+import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 interface HeroProps {}
 
