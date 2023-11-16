@@ -14,7 +14,6 @@ const Header: FC<HeaderProps> = ({}) => {
         className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
-        transition={{ delay: 0.5 }}
       ></motion.div>
 
       {/* Had issues nesting the nav with animations, so put it below */}
@@ -26,7 +25,7 @@ const Header: FC<HeaderProps> = ({}) => {
               key={i}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5 + i * 0.01 }}
+              transition={{ delay: i * 0.01 }}
             >
               <Link
                 className="p-3 hover:text-gray-950 transition"

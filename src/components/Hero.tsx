@@ -53,7 +53,7 @@ const Hero: FC<HeroProps> = ({}) => {
           transition={{ duration: 0.2 }}
           className="select-text"
         >
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold !leading-[2.5rem] sm:!leading-[4rem] md:!leading-[5rem]">
+          <h1 className="text-5xl sm:text-7xl font-bold !leading-[2.5rem] sm:!leading-[4rem]">
             ROB
             <br />
             HARDING
