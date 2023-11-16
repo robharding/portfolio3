@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import BackdropColors from "@/components/BackdropColors";
+import BackgroundGradient from "@/components/BackgroundGradient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
           `bg-gray-50 min-h-screen text-gray-950 relative`
         )}
       >
-        <BackdropColors />
+        <BackgroundGradient />
         {children}
       </body>
     </html>
