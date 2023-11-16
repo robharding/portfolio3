@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          `bg-gray-50 min-h-screen text-gray-950 relative`
+          `bg-gray-50 min-h-screen text-gray-950 relative grainy`
         )}
       >
         <BackgroundGradient />
