@@ -20,7 +20,7 @@ const BackdropColors: FC<BackdropColorsProps> = ({}) => {
         </div>
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 -z-10 transform-gpu overflow-hidden -top-[8.5rem]  blur-2xl sm:blur-3xl"
+          className="pointer-events-none absolute inset-x-0 -z-10 transform-gpu overflow-hidden top-[15rem] sm:top-[20rem] blur-2xl sm:blur-3xl"
         >
           <div
             style={{
