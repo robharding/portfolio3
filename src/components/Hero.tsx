@@ -1,12 +1,20 @@
 import Image from "next/image";
 import { FC } from "react";
+import { Button } from "./ui/button";
+import {
+  ArrowRight,
+  ArrowRightFromLine,
+  Download,
+  Github,
+  Linkedin,
+} from "lucide-react";
 
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <section>
-      <div className="flex w-full sm:w-[36rem] mx-auto items-center justify-center gap-8">
+    <section className="w-full sm:w-[36rem] mx-auto">
+      <div className="flex w-full items-center justify-center gap-8">
         <div className="relative">
           <Image
             src="/images/profile.jpg"
@@ -34,6 +42,32 @@ const Hero: FC<HeroProps> = ({}) => {
             Developer
           </h2>
         </div>
+      </div>
+      <div className="flex justify-center gap-2 sm:gap-3 mt-8 w-[10rem] sm:w-[28rem] mx-auto">
+        <Button
+          className="flex flex-1 gap-2  items-center text-xs sm:text-base"
+          size="sm"
+        >
+          Contact me here <ArrowRight className="w-4 h-4" />
+        </Button>
+        <Button
+          className="flex gap-2 flex-1 items-center text-xs sm:text-base bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
+          size="sm"
+        >
+          Download CV <Download className="w-4 h-4" />
+        </Button>
+        <Button
+          size="sm"
+          className="bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
+        >
+          <Linkedin className="w-4 h-4" />
+        </Button>
+        <Button
+          size="sm"
+          className="bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
+        >
+          <Github className="w-4 h-4" />
+        </Button>
       </div>
     </section>
   );
