@@ -5,7 +5,7 @@ interface BackdropColorsProps {}
 const BackdropColors: FC<BackdropColorsProps> = ({}) => {
   return (
     <div>
-      <div className="relative isolate">
+      <div className="relative isolate -z-10">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 -z-10 transform-gpu overflow-hidden -top-[8.5rem] sm:-top-80 blur-2xl sm:blur-3xl"
