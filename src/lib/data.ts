@@ -1,6 +1,10 @@
 import React from "react";
 import { ActivitySquare, Briefcase, CableCar } from "lucide-react";
 
+import corpcommentImg from "@/public/corpcomment.png";
+import rmtdevImg from "@/public/rmtdev.png";
+import wordanalyticsImg from "@/public/wordanalytics.png";
+
 export const links = [
   {
     name: "Home",
@@ -52,5 +56,29 @@ export const experiencesData = [
       "I Spent a year working in the mountains while improving my web development skills through personal projects.",
     icon: React.createElement(CableCar),
     date: "2022 - present",
+  },
+] as const;
+
+export const projectsData = [
+  {
+    title: "Quill",
+    description:
+      "A SaaS that allows users to upload PDFs and chat with an AI in real time.",
+    tags: ["React", "Next.js", "OpenAI", "S3", "Stripe", "Tailwind", "Prisma"],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "CulinaryWizard",
+    description:
+      "A SaaS app that simplifies blog post recipes using gpt-4 and allows users to save and share recipes.",
+    tags: ["React", "Nextjs", "OpenAI", "Tailwind", "Prisma"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Breadit",
+    description:
+      "A social media app similar to reddit that allows users to post, comment, like, create posts, and create communities.",
+    tags: ["React", "Next.js", "Redis", "Auth.js", "Tailwind", "Prisma"],
+    imageUrl: wordanalyticsImg,
   },
 ] as const;

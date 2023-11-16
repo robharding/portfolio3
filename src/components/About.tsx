@@ -35,7 +35,7 @@ const About: FC<AboutProps> = ({}) => {
           <span className="font-semibold">Node.js</span>, and{" "}
           <span className="font-semibold">Prisma</span>, but I&apos;m always
           looking to learn something new and love a challenge. I&apos;m
-          currently looking for a{" "}
+          currently searching for a{" "}
           <span className="font-semibold">full-time position</span> as a
           software developer.
         </p>
