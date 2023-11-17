@@ -7,25 +7,24 @@ interface ProvidersProps {
   children: React.ReactNode;
 }
 
+type SectionName = (typeof links)[number]["name"];
+
 export const ActiveSectionContext = createContext({
   activeSection: "Home",
-  click: (section: (typeof links)[number]["name"]) => {},
-  hover: (section: (typeof links)[number]["name"]) => {},
+  click: (section: SectionName) => {},
+  hover: (section: SectionName) => {},
 });
 
 const Providers: FC<ProvidersProps> = ({ children }) => {
-  const [clickedSection, setClickedSection] = useState<
-    null | (typeof links)[number]["name"]
-  >(null);
-  const [activeSection, setActiveSection] =
-    useState<(typeof links)[number]["name"]>("Home");
+  const [clickedSection, setClickedSection] = useState<null | SectionName>();
+  const [activeSection, setActiveSection] = useState<SectionName>("Home");
 
-  const click = (section: (typeof links)[number]["name"]) => {
+  const click = (section: SectionName) => {
     setClickedSection(section);
     setActiveSection(section);
   };
 
-  const hover = (section: (typeof links)[number]["name"]) => {
+  const hover = (section: SectionName) => {
     if (clickedSection && section == clickedSection) {
       setClickedSection(null);
       return;
