@@ -1,15 +1,17 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC, useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { ActiveSectionContext } from "./Providers";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, click: setActiveSection } =
+    useContext(ActiveSectionContext);
 
   return (
     <header className="z-[999] relative">
