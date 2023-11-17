@@ -1,13 +1,16 @@
 "use client";
 
-import { FC } from "react";
+import { FC, useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
+  const [activeSection, setActiveSection] = useState("Home");
+
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -21,16 +24,34 @@ const Header: FC<HeaderProps> = ({}) => {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link, i) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 flex items-center justify-center relative"
               key={i}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: i * 0.01 }}
             >
               <Link
-                className="p-3 hover:text-gray-950 transition"
+                className={cn(
+                  "p-3 hover:text-gray-950 transition",
+                  activeSection === link.name && "text-gray-950"
+                )}
                 href={link.hash}
+                onClick={() => setActiveSection(link.name)}
               >
+                {link.name === activeSection && (
+                  <motion.span
+                    className={cn(
+                      "bg-gray-100 rounded-full absolute inset-0 -z-10"
+                    )}
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  />
+                )}
+
                 {link.name}
               </Link>
             </motion.li>
