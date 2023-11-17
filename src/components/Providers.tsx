@@ -1,13 +1,12 @@
 "use client";
 
 import { links } from "@/lib/data";
+import { SectionName } from "@/lib/types";
 import { FC, createContext, useEffect, useState } from "react";
 
 interface ProvidersProps {
   children: React.ReactNode;
 }
-
-type SectionName = (typeof links)[number]["name"];
 
 export const ActiveSectionContext = createContext({
   activeSection: "Home",

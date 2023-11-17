@@ -4,10 +4,11 @@ import { FC, useContext, useEffect } from "react";
 import { ActiveSectionContext } from "./Providers";
 import { useInView } from "react-intersection-observer";
 import { links } from "@/lib/data";
+import { SectionName } from "@/lib/types";
 
 interface SectionWrapperProps {
   children: React.ReactNode;
-  name: (typeof links)[number]["name"];
+  name: SectionName;
   threshold?: number;
 }
 
