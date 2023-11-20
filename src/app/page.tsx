@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Experience from "@/components/experience/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -8,7 +9,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4 min-h-[5000px]">
+    <main className="min-h-[5000px]">
       <SectionWrapper name="Home" threshold={1}>
         <Hero />
       </SectionWrapper>
@@ -24,6 +25,9 @@ export default function Home() {
       </SectionWrapper>
       <SectionWrapper name="Experience">
         <Experience />
+      </SectionWrapper>
+      <SectionWrapper name="Contact" className="px-0">
+        <Contact />
       </SectionWrapper>
     </main>
   );

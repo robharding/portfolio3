@@ -1,10 +1,11 @@
 "use client";
 
-import { FC, useContext, useEffect } from "react";
+import React, { FC, useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { ActiveSectionContext } from "./Providers";
 import { SectionName } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
 interface SectionWrapperProps {
   children: React.ReactNode;
@@ -12,11 +13,9 @@ interface SectionWrapperProps {
   threshold?: number;
 }
 
-const SectionWrapper: FC<SectionWrapperProps> = ({
-  children,
-  name,
-  threshold,
-}) => {
+const SectionWrapper: FC<
+  SectionWrapperProps & React.HTMLAttributes<HTMLElement>
+> = ({ children, name, threshold, className }) => {
   const { hover: setActiveSection } = useContext(ActiveSectionContext);
 
   const { ref, inView } = useInView({
@@ -29,7 +28,11 @@ const SectionWrapper: FC<SectionWrapperProps> = ({
     }
   }, [inView, setActiveSection, name]);
 
-  return <div ref={ref}>{children}</div>;
+  return (
+    <div ref={ref} className={cn("w-full flex justify-center px-4", className)}>
+      {children}
+    </div>
+  );
 };
 
 export default SectionWrapper;
