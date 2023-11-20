@@ -1,9 +1,9 @@
 "use client";
 
 import { FC, useContext, useEffect } from "react";
-import { ActiveSectionContext } from "./Providers";
 import { useInView } from "react-intersection-observer";
-import { links } from "@/lib/data";
+
+import { ActiveSectionContext } from "./Providers";
 import { SectionName } from "@/lib/types";
 
 interface SectionWrapperProps {

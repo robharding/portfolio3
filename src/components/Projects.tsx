@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+
 import SectionHeading from "./SectionHeading";
 import { projectsData } from "@/lib/data";
 import Project from "./Project";

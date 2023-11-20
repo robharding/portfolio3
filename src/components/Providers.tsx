@@ -1,8 +1,8 @@
 "use client";
 
-import { links } from "@/lib/data";
+import { FC, createContext, useState } from "react";
+
 import { SectionName } from "@/lib/types";
-import { FC, createContext, useEffect, useState } from "react";
 
 interface ProvidersProps {
   children: React.ReactNode;

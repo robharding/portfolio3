@@ -2,8 +2,9 @@
 
 import { FC, useContext, useState } from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
+
+import { links } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { ActiveSectionContext } from "./Providers";
 
