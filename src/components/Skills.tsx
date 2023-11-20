@@ -26,7 +26,10 @@ const Skills: FC<SkillsProps> = ({}) => {
   const ref = useRef<HTMLUListElement>(null);
 
   return (
-    <section id="skills" className="scroll-mt-16 sm:scroll-mt-28">
+    <section
+      id="skills"
+      className="scroll-mt-16 sm:scroll-mt-28 mb-16 sm:mb-28"
+    >
       <SectionHeading>My Skills</SectionHeading>
       <ul
         ref={ref}

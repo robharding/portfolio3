@@ -55,7 +55,7 @@ export const experiencesData = [
     description:
       "I Spent a year working in the mountains while improving my web development skills through personal projects.",
     icon: React.createElement(CableCar),
-    date: "2022 - present",
+    date: "2021 - present",
   },
 ] as const;
 
