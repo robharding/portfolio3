@@ -37,7 +37,7 @@ export const experiencesData = [
     title: "Full Stack Developer Intern",
     location: "Waterloo, Ontario",
     description:
-      "While in my second year of studies, I interned at a Y-Combinator startup for 5 months.",
+      "While in my second year of university, I interned at a Y-Combinator startup for 5 months.",
     icon: React.createElement(ActivitySquare),
     date: "2018",
   },

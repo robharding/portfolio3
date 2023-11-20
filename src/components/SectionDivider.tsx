@@ -10,7 +10,7 @@ const SectionDivider: FC<SectionDividerProps> = ({}) => {
     <motion.div
       className="bg-black my-24  h-16 w-1.5 rounded-full hidden sm:block"
       initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 0.3, y: 0 }}
+      animate={{ opacity: 0.2, y: 0 }}
       transition={{ delay: 0.125 }}
     />
   );

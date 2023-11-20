@@ -17,7 +17,7 @@ const Experience: FC<ExperienceProps> = ({}) => {
   return (
     <section id="experience" className="scroll-mt-16 sm:scroll-mt-28">
       <SectionHeading>My Experience</SectionHeading>
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="" className="h-fit">
         {experiencesData.map((item, index) => (
           <ExperienceItem key={index} item={item} />
         ))}
