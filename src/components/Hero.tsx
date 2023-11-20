@@ -84,7 +84,7 @@ const Hero: FC<HeroProps> = ({}) => {
             buttonVariants({ size: "sm" }),
             "flex flex-1 gap-2 items-center text-xs sm:text-base group"
           )}
-          href="/"
+          href="#contact"
         >
           Contact me here{" "}
           <MoveRight className="w-4 h-4 mt-[0.125rem] group-hover:translate-x-1 duration-200" />
@@ -94,7 +94,7 @@ const Hero: FC<HeroProps> = ({}) => {
             buttonVariants({ size: "sm" }),
             "flex gap-2 flex-1 items-center text-xs sm:text-base bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40 group"
           )}
-          href="/"
+          href="/cv.pdf"
         >
           Download CV{" "}
           <Download className="w-4 h-4 group-hover:scale-110 duration-200" />
@@ -104,7 +104,7 @@ const Hero: FC<HeroProps> = ({}) => {
             buttonVariants({ size: "sm" }),
             "bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
           )}
-          href="/"
+          href="https://www.linkedin.com/in/robjharding/"
         >
           <Linkedin className="w-4 h-4 " />
         </Link>
@@ -113,7 +113,7 @@ const Hero: FC<HeroProps> = ({}) => {
             buttonVariants({ size: "sm" }),
             "bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
           )}
-          href="/"
+          href="https://github.com/robharding"
         >
           <Github className="w-4 h-4" />
         </Link>
