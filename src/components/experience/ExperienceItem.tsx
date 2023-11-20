@@ -27,7 +27,7 @@ const ExperienceItem: FC<ExperienceItemProps> = ({ item }) => {
         contentArrowStyle={{ borderRight: "0.4rem solid #9ca3af" }}
         visible={inView}
         date={item.date}
-        dateClassName="sm:mx-2"
+        dateClassName="lg:mx-2"
         icon={item.icon}
         iconStyle={{
           background: "white",
