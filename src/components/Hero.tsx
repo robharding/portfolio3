@@ -8,6 +8,7 @@ import Link from "next/link";
 
 import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { Avatar } from "./ui/avatar";
 
 interface HeroProps {}
 
@@ -24,15 +25,16 @@ const Hero: FC<HeroProps> = ({}) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.2, type: "tween" }}
           >
-            <Image
-              src="/images/profile.jpg"
-              alt="Profile"
-              width="192"
-              height="192"
-              quality={100}
-              priority={true}
-              className="h-32 w-32 sm:h-48 sm:w-48 md:h-52 md:w-52 object-cover rounded-full border-[0.35rem] border-white shadow-xl"
-            />
+            <Avatar className="h-32 w-32 sm:h-48 sm:w-48 md:h-52 md:w-52 border-[0.35rem] border-white shadow-xl">
+              <Image
+                src="/images/profile.jpg"
+                alt="Profile"
+                fill
+                quality={100}
+                priority={true}
+                className="object-cover"
+              />
+            </Avatar>
           </motion.div>
 
           <motion.span
