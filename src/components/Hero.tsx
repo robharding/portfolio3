@@ -14,7 +14,7 @@ interface HeroProps {}
 const Hero: FC<HeroProps> = ({}) => {
   return (
     <section
-      className="w-full sm:w-[36rem] md:w-fit mx-auto scroll-mt-40"
+      className="w-full sm:w-[36rem] md:w-fit mx-auto scroll-mt-40 mb-16 sm:mb-0"
       id="home"
     >
       <div className="flex w-full items-center justify-center gap-8 select-none">

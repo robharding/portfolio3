@@ -11,7 +11,7 @@ interface AboutProps {}
 const About: FC<AboutProps> = ({}) => {
   return (
     <motion.section
-      className="max-w-[45rem] leading-7 sm:mb-28 scroll-mt-28"
+      className="max-w-[45rem] leading-7 mb-16 sm:mb-28 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
