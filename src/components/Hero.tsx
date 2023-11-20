@@ -18,7 +18,7 @@ const Hero: FC<HeroProps> = ({}) => {
       className="w-full sm:w-[36rem] md:w-fit mx-auto scroll-mt-40 mb-16 sm:mb-0"
       id="home"
     >
-      <div className="flex w-full items-center justify-center gap-8 select-none">
+      <div className="flex items-center justify-center gap-4 sm:gap-8 select-none">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
