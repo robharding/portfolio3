@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import SectionDivider from "@/components/SectionDivider";
 import SectionWrapper from "@/components/SectionWrapper";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -14,8 +15,11 @@ export default function Home() {
       <SectionWrapper name="About">
         <About />
       </SectionWrapper>
-      <SectionWrapper name="Projects" threshold={0.5}>
+      <SectionWrapper name="Projects" threshold={0.75}>
         <Projects />
+      </SectionWrapper>
+      <SectionWrapper name="Skills">
+        <Skills />
       </SectionWrapper>
     </main>
   );
