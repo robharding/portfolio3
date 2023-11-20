@@ -20,7 +20,7 @@ const SectionWrapper: FC<SectionWrapperProps> = ({
   const { hover: setActiveSection } = useContext(ActiveSectionContext);
 
   const { ref, inView } = useInView({
-    threshold: threshold || 1,
+    threshold: threshold || 0.75,
   });
 
   useEffect(() => {

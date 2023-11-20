@@ -18,7 +18,7 @@ const Skills: FC<SkillsProps> = ({}) => {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section>
+    <section id="skills">
       <SectionHeading>My Skills</SectionHeading>
       <ul
         ref={ref}
@@ -26,7 +26,7 @@ const Skills: FC<SkillsProps> = ({}) => {
       >
         {skillsData.map((skill, i) => (
           <motion.li
-            className="w-[30%] sm:w-[initial] text-center bg-white border border-black/5 rounded p-2"
+            className="w-[30%] sm:w-[initial] text-center bg-white border border-black/[0.1] rounded px-5 py-3"
             key={i}
             style={{
               scale: scaleProgress,

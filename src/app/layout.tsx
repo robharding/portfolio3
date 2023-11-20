@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import BackgroundGradient from "@/components/BackgroundGradient";
 import Header from "@/components/Header";
 import Providers from "@/components/Providers";
+import MobileNav from "@/components/MobileNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <BackgroundGradient />
         <Providers>
           <Header />
+          <MobileNav />
           {children}
         </Providers>
       </body>
