@@ -10,6 +10,8 @@ import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
 import { Avatar } from "./ui/avatar";
 
+import profileImage from "../../public/images/profile.jpg";
+
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
@@ -27,12 +29,13 @@ const Hero: FC<HeroProps> = ({}) => {
           >
             <Avatar className="h-32 w-32 sm:h-48 sm:w-48 md:h-52 md:w-52 border-[0.35rem] border-white shadow-xl">
               <Image
-                src="/images/profile.jpg"
+                src={profileImage}
                 alt="Profile"
                 fill
                 quality={100}
                 priority={true}
                 className="object-cover"
+                placeholder="blur"
               />
             </Avatar>
           </motion.div>
