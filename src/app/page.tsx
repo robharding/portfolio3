@@ -9,7 +9,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <main className="min-h-[5000px]">
+    <main>
       <SectionWrapper name="Home" threshold={1}>
         <Hero />
       </SectionWrapper>
@@ -23,10 +23,10 @@ export default function Home() {
       <SectionWrapper name="Skills">
         <Skills />
       </SectionWrapper>
-      <SectionWrapper name="Experience">
+      <SectionWrapper name="Experience" threshold={1}>
         <Experience />
       </SectionWrapper>
-      <SectionWrapper name="Contact" className="px-0">
+      <SectionWrapper name="Contact">
         <Contact />
       </SectionWrapper>
     </main>
