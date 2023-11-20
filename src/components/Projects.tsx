@@ -8,7 +8,10 @@ interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = ({}) => {
   return (
-    <section className="scroll-mt-28 mb-16 sm:mb-28" id="projects">
+    <section
+      className="scroll-mt-16 sm:scroll-mt-28 mb-16 sm:mb-28"
+      id="projects"
+    >
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
