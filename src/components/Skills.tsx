@@ -6,16 +6,24 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { skillsData } from "@/lib/data";
 
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
+
 interface SkillsProps {}
 
 const Skills: FC<SkillsProps> = ({}) => {
   const ref = useRef<HTMLUListElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
     <section id="skills" className="scroll-mt-16 sm:scroll-mt-28">
@@ -28,10 +36,13 @@ const Skills: FC<SkillsProps> = ({}) => {
           <motion.li
             className="w-[30%] sm:w-[initial] text-center bg-white border border-black/[0.1] rounded-[0.8rem] px-5 py-3"
             key={i}
-            style={{
-              scale: scaleProgress,
-              opacity: opacityProgress,
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
             }}
+            custom={i}
           >
             {skill}
           </motion.li>
