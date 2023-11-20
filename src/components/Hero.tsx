@@ -31,6 +31,7 @@ const Hero: FC<HeroProps> = ({}) => {
               <Image
                 src={profileImage}
                 alt="Profile"
+                sizes="(max-width: 639px) 100vw, 640px"
                 fill
                 quality={100}
                 priority={true}
