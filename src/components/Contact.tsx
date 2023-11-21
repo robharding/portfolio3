@@ -9,7 +9,10 @@ interface ContactProps {}
 
 const Contact: FC<ContactProps> = ({}) => {
   return (
-    <section id="contact" className="min-h-[500px] w-[42rem] text-center">
+    <section
+      id="contact"
+      className="w-[42rem] text-center mb-28 sm:mb-40 scroll-mt-28"
+    >
       <SectionHeading className="mb-2">Contact Me</SectionHeading>
       <p>
         Please contact me directly at{" "}
