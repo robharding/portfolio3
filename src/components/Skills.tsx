@@ -33,7 +33,7 @@ const Skills: FC<SkillsProps> = ({}) => {
       <SectionHeading>My Skills</SectionHeading>
       <ul
         ref={ref}
-        className="flex flex-wrap gap-2 justify-center max-w-[53rem] "
+        className="flex flex-wrap gap-2 justify-center max-w-[53rem] text-xs sm:text-base"
       >
         {skillsData.map((skill, i) => (
           <motion.li

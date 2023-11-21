@@ -105,6 +105,7 @@ const Hero: FC<HeroProps> = ({}) => {
             "bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
           )}
           href="https://www.linkedin.com/in/robjharding/"
+          target="_blank"
         >
           <Linkedin className="w-4 h-4 " />
         </Link>
@@ -114,6 +115,7 @@ const Hero: FC<HeroProps> = ({}) => {
             "bg-white text-foreground hover:bg-gray-100 border-white border-opacity-40"
           )}
           href="https://github.com/robharding"
+          target="_blank"
         >
           <Github className="w-4 h-4" />
         </Link>
