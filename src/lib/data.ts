@@ -9,8 +9,8 @@ import {
 } from "lucide-react";
 
 import corpcommentImg from "../../public/images/quill.png";
-import wordanalyticsImg from "../../public/images/wordanalytics.png";
 import cwImage from "../../public/images/cw.png";
+import breaditImage from "../../public/images/breadit.png";
 
 export const links = [
   {
@@ -80,7 +80,7 @@ export const projectsData = [
     description:
       "A social media app similar to reddit that allows users to post, comment, like, create posts, and create communities.",
     tags: ["React", "Next.js", "Redis", "Auth.js", "Tailwind", "Prisma"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: breaditImage,
   },
   {
     title: "CulinaryWizard",
