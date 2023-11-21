@@ -73,6 +73,7 @@ export const projectsData = [
       "A SaaS that allows users to upload PDFs and chat with an AI in real time.",
     tags: ["React", "Next.js", "OpenAI", "S3", "Stripe", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
+    href: "https://quill.robharding.dev",
   },
 
   {
@@ -81,6 +82,7 @@ export const projectsData = [
       "A social media app similar to reddit that allows users to post, comment, like, create posts, and create communities.",
     tags: ["React", "Next.js", "Redis", "Auth.js", "Tailwind", "Prisma"],
     imageUrl: breaditImage,
+    href: "https://breadit.robharding.dev",
   },
   {
     title: "CulinaryWizard",
@@ -88,6 +90,7 @@ export const projectsData = [
       "A SaaS app that simplifies blog post recipes using gpt-4 and allows users to save and share recipes.",
     tags: ["React", "Nextjs", "OpenAI", "Tailwind", "Prisma"],
     imageUrl: cwImage,
+    href: "https://github.com/robharding/CulinaryWizard",
   },
 ] as const;
 
