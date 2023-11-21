@@ -11,7 +11,7 @@ const Contact: FC<ContactProps> = ({}) => {
   return (
     <section
       id="contact"
-      className="w-[42rem] text-center mb-28 sm:mb-40 scroll-mt-28"
+      className="w-[min(100%,38rem)] text-center mb-28 sm:mb-40 scroll-mt-28"
     >
       <SectionHeading className="mb-2">Contact Me</SectionHeading>
       <p>
