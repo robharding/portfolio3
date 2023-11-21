@@ -35,10 +35,17 @@ const Contact: FC<ContactProps> = ({}) => {
         or through this form.
       </p>
       <form className="flex flex-col gap-4 mt-8">
-        <Input placeholder="Your email" className="rounded-[0.5rem]" />
+        <Input
+          placeholder="Your email"
+          type="email"
+          required
+          maxLength={500}
+          className="rounded-[0.5rem]"
+        />
         <Textarea
           placeholder="Your message"
           className="rounded-[0.5rem]"
+          maxLength={500}
           rows={8}
         />
         <Button className="flex flex-row gap-2 w-fit">
